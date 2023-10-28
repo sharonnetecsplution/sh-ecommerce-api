@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.10" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lojinha.Application\Lojinha.Application.csproj" />
+    <ProjectReference Include="..\Lojinha.Domain\Lojinha.Domain.csproj" />
+    <ProjectReference Include="..\Lojinha.Infra.Data\Lojinha.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
